@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài tập HTML - Bài 8</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f3f3f3;
+        margin: 0;
+        padding: 20px;
+    }
+
+    main {
+        max-width: 1045px;
+        margin: auto;
+    }
+
+    header, nav, section, aside, article, figure, figcaption, footer {
+        border: 1px solid white;
+        background-color: rgba(153,153,153,0.25);
+        display: block;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    header h1 {
+        color: blue;
+        margin: 0;
+        font-size: 24px;
+    }
+
+    hgroup img {
+        height: 70px;
+        display: block;
+        margin: 5px auto;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        color: blue;
+        margin: 0 10px;
+        text-decoration: underline;
+    }
+
+    /* Bố cục 2 cột: section + aside */
+    .content {
+        display: flex;
+        gap: 10px;
+    }
+
+    section {
+        flex: 2;
+    }
+
+    aside {
+        flex: 1;
+    }
+
+    .box-link {
+        border: 1px solid #ccc;
+        padding: 5px;
+        background: #eee;
+        display: inline-block;
+        text-decoration: underline;
+        color: blue;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    figure img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border: 1px solid #ccc;
+    }
+
+    figcaption {
+        text-align: center;
+        font-style: italic;
+        color: #333;
+        margin-top: 5px;
+    }
+
+    footer {
+        text-align: center;
+        color: #444;
+    }
+</style>
+</head>
+<body>
+
+<main>
+    <!-- HEADER -->
+    <header>
+        <h1>HTML5 Structure</h1>
+        <hgroup>
+            <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/BIT_logo.png"
+                 alt="Khoa Công nghệ Thông tin Kinh doanh - UEH">
+        </hgroup>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#">Chương trình Đại học</a>
+        <a href="#">CT Liên thông Đại học</a>
+        <a href="#">Chương trình Sau đại học</a>
+        <a href="#">Chương trình quốc tế</a>
+    </nav>
+
+    <!-- CONTENT -->
+    <div class="content">
+        <!-- SECTION TRÁI -->
+        <section>
+            <h2>Chương trình Đại học</h2>
+            <article>
+                <a href="#" class="box-link">Hệ thống hoạch định nguồn lực doanh nghiệp (ERP)</a>
+                <p>
+                    Nhu cầu xã hội: Hoạch định các nguồn lực một cách hiệu quả để nhắm đến mục tiêu giảm chi phí,
+                    tăng sức cạnh tranh là một vấn đề mà mọi doanh nghiệp luôn phải đối mặt, nhất là trong thời kỳ hội nhập hiện nay.
+                    Hệ thống hoạch định nguồn lực doanh nghiệp (ERP) […]
+                </p>
+                <figure>
+                    <img src="https://base.vn/wp-content/uploads/2025/01/Doanh-nghiep-nao-phu-hop-ERP-1024x576.webp" alt="ERP">
+                    <figcaption>Minh họa ERP</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <!-- ASIDE PHẢI -->
+        <aside>
+            <h2>Liên kết</h2>
+            <article>
+                <a href="#" class="box-link">Hệ thống thông tin kinh doanh</a>
+                <figure>
+                    <img src="https://images.yourstory.com/production/document_image/mystoryimage/3htkfjnj-technology.jpg?mode=crop&crop=faces&ar=1:1&format=auto&w=1920&q=75"
+                         alt="Hệ thống thông tin kinh doanh">
+                    <figcaption>Hệ thống thông tin kinh doanh</figcaption>
+                </figure>
+                <p>
+                    Nhu cầu xã hội: Hiện nay, ứng dụng công nghệ trong điều hành doanh nghiệp đang được các nhà quản trị quan tâm.
+                    Các hệ thống thông tin giúp doanh nghiệp nâng cao hiệu quả và khả năng cạnh tranh trong thị trường hiện đại.
+                </p>
+            </article>
+        </aside>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© Khoa Công nghệ Thông tin Kinh doanh – HTML5 Layout Example</p>
+    </footer>
+</main>
+
+</body>
+</html>

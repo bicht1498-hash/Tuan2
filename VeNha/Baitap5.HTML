@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập HTML - Bài 5 (Định dạng 3 ngành học) </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        .card {
+            width: 300px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            overflow: hidden;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 12px 15px;
+        }
+        .card h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #000;
+        }
+        .card p {
+            font-size: 14px;
+            color: #333;
+            text-align: justify;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Công nghệ phần mềm -->
+        <div class="card">
+            <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/bit-300x150.jpg" alt="Công nghệ phần mềm">
+            <div class="card-content">
+                <a href="https://bit.ueh.edu.vn/cong-nghe-phan-mem/" target="_blank">
+                <h3>CÔNG NGHỆ PHẦN MỀM</h3>
+                </a>
+                <p>
+                    Nhu cầu xã hội Cách mạng công nghiệp 4.0 giúp công nghệ thông tin và viễn thông (ICT)
+                    xâm nhập mọi mặt đời sống kinh tế xã hội.
+                </p>
+            </div>
+        </div>
+
+        <!-- Thương mại điện tử -->
+        <div class="card">
+            <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/e-commerce-300x150.jpg" alt="Ngành Thương mại điện tử">
+            <div class="card-content">
+                <a href="http://bit.ueh.edu.vn/chuyen-nganh-thuong-mai-dien-tu/" target="_blank">
+                <h3>NGÀNH THƯƠNG MẠI ĐIỆN TỬ</h3>
+                </a>
+                <p>
+                    Nhu cầu xã hội hiện nay Thương mại điện tử (TMĐT) tại Việt Nam đang phát triển nhanh,
+                    đóng vai trò quan trọng trong nền kinh tế số.
+                </p>
+            </div>
+        </div>
+
+        <!-- Hệ thống thông tin kinh doanh -->
+        <div class="card">
+            <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/mis-300x150.jpg" alt="Hệ thống thông tin kinh doanh">
+            <div class="card-content">
+                <a href="http://bit.ueh.edu.vn/chuyen-nganh-he-thong-thong-tin-kinh-doanh/" target="_blank">
+                <h3>HỆ THỐNG THÔNG TIN KINH DOANH</h3>
+                </a>
+                <p>
+                    Nhu cầu xã hội hiện nay, ứng dụng công nghệ trong quản lý và điều hành doanh nghiệp
+                    đang được các nhà quản lý đặc biệt quan tâm.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

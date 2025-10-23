@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>HTML5 Quiz – Bài 9</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 720px;
+    margin: 24px auto;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  h1 { margin-bottom: 10px; color: #114fe0; }
+  ol { padding-left: 20px; }
+  li { margin: 15px 0; }
+  label { display: block; margin-bottom: 6px; font-weight: 600; }
+  input {
+    width: 100%;
+    max-width: 520px;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    width: auto;
+    background-color: #114fe0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  input[type="submit"]:hover {
+    background-color: #0c3cb0;
+  }
+  small {
+    display: block;
+    color: #666;
+    font-style: italic;
+    margin-top: 4px;
+  }
+</style>
+</head>
+<body>
+
+<h1>HTML5 Quiz</h1>
+
+<form method="post" action="" id="quiz">
+  <ol>
+    <!-- Câu 1 -->
+    <li>
+      <label for="q1">What color do you get when you mix red and yellow?</label>
+      <!-- type=color: chỉ nhận màu hợp lệ -->
+      <input type="color" name="q1" id="q1" required value="#FFA500">
+      <small>Pick or input a valid color (e.g. orange). Default: orange.</small>
+    </li>
+
+    <!-- Câu 2 -->
+    <li>
+      <label for="q2">What is the first primary number greater than 20?</label>
+      <input type="number" name="q2" id="q2" min="20" step="1" required
+             placeholder="Enter an integer greater than or equal to 20">
+    </li>
+
+    <!-- Câu 3 -->
+    <li>
+      <label for="q3">
+        Using exactly four 9s and no other digits, write an equation that evaluates to 100.
+        You may use +, -, *, and /. Do not include spaces.
+      </label>
+      <input type="text" name="q3" id="q3" required
+             placeholder="Example: (99+9/9)=100"
+             pattern="^[9+\-*/=()]+$"
+             title="Only use 9, +, -, *, /, =, and parentheses (no spaces).">
+    </li>
+
+    <!-- Câu 4 -->
+    <li>
+      <label for="q4">What date was John F. Kennedy assassinated?</label>
+      <input type="date" name="q4" id="q4" required
+             placeholder="Enter the correct date (YYYY-MM-DD)">
+    </li>
+
+    <!-- Câu 5 -->
+    <li>
+      <label for="q5">What is the world's most popular search engine?</label>
+      <input type="url" name="q5" id="q5" required
+             placeholder="Enter a valid URL, e.g. https://www.google.com">
+    </li>
+  </ol>
+
+  <input type="submit" value="Submit Quiz">
+</form>
+
+</body>
+</html>

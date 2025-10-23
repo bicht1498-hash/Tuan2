@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title> Bài tập HTML - Bài 6 (Liên kết nội )</title>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 24px auto; padding: 0 16px; }
+    nav ul { margin: 0 0 16px; padding-left: 20px; }
+    nav a { text-decoration: none; color: #0b59ff; font-weight: 700; }
+    nav a:hover { color: #d62828; }
+    section { margin: 36px 0; }
+    /* Khi cuộn tới heading, chừa khoảng trống trên cho dễ nhìn */
+    h2 { scroll-margin-top: 80px; }
+    .back { text-align:center; margin-top: 16px; }
+    .back a { color:#0b59ff; text-decoration:none; }
+  </style>
+</head>
+<body id="top">
+  <!-- CÂU 3 -->
+  <section id="cau3">
+    <h2>Câu 3 – Danh sách chuyên ngành đào tạo</h2>
+    <ul>
+      <li>Đại học
+        <ul>
+          <li>Hệ Thống thông tin quản lý</li>
+          <li>Thương mại điện tử</li>
+          <li>ERP</li>
+        </ul>
+      </li>
+      <li>Sau đại học
+        <ul>
+          <li>Thạc sĩ Công nghệ thiết kế thông tin &amp; truyền thông</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <!-- CÂU 4 -->
+  <section id="cau4">
+    <h2>Câu 4 – Thẻ ngành (1 cột)</h2>
+    <div style="width:300px">
+      <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/bit-300x150.jpg" alt="Công nghệ phần mềm" width="300" height="150">
+      <h3>Công nghệ Phần mềm</h3>
+      <p>Nhu cầu xã hội Cách mạng công nghiệp 4.0 giúp ICT xâm nhập mọi mặt đời sống…</p>
+    </div>
+  </section>
+
+  <!-- CÂU 5 -->
+  <section id="cau5">
+    <h2>Câu 5 – Thẻ ngành (3 cột)</h2>
+    <div style="display:flex; gap:20px; flex-wrap:wrap">
+      <div>
+        <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/bit-300x150.jpg" width="300" height="150" alt="CNPM">
+        <h3>CÔNG NGHỆ PHẦN MỀM</h3>
+      </div>
+      <div>
+        <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/e-commerce-300x150.jpg" width="300" height="150" alt="TMĐT">
+        <h3>NGÀNH THƯƠNG MẠI ĐIỆN TỬ</h3>
+      </div>
+      <div>
+        <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/mis-300x150.jpg" width="300" height="150" alt="HTTTKD">
+        <h3>HỆ THỐNG THÔNG TIN KINH DOANH</h3>
+      </div>
+    </div>
+    <div class="back"><a href="#top">⬆ Về đầu trang</a></div>
+  </section>
+
+</body>
+</html>
